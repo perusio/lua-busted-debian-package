@@ -1,0 +1,12 @@
+lua-busted (2.0.rc11-0-perusio.1.0) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- António P. P. Almeida <appa@perusio.net>  Fri, 06 Nov 2015 03:17:02 +0100
+
+lua-busted (2.0.rc10-1-perusio.1.0) UNRELEASED; urgency=medium
+
+  * Initial debian packaging.
+
+ -- António P. P. Almeida <appa@perusio.net>  Fri, 06 Nov 2015 01:11:59 +0100
+

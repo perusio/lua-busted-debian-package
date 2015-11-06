@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=lua --with lua
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -fr $(wildcard 5.?-lua-busted)
+
+override_dh_auto_install:
+	dh_auto_install
+	cp bin/busted debian/lua-busted/usr/bin
+	cp completions/bash/busted.bash debian/lua-busted/etc/bash_completion.d
+	cp completions/zsh/_busted debian/lua-busted/usr/share/zsh/vendor-completions

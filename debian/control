@@ -1,0 +1,36 @@
+Source: lua-busted
+Maintainer: António P. P. Almeida <appa@perusio.net> 
+Uploaders: António P. P. Almeida <appa@perusio.net>
+Section: interpreters
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-lua
+Standards-Version: 3.9.6
+Vcs-Browser: https://github.com/Olivine-Labs/busted
+Vcs-Git: git://git@github.com:Olivine-Labs/busted.git
+Homepage: https://github.com/Olivine-Labs/busted
+
+Package: lua-busted
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         lua-cliargs,
+         lua-dkjson,
+         lua-filesystem,
+         lua-luassert,
+         lua-mediator,
+         lua-penlight,
+         lua-say,
+         lua-term
+Description: Lua implementation of the busted pattern.
+ busted is a unit testing framework with a focus on
+ being easy to use. Supports Lua >= 5.1, 
+ luajit >= 2.0.0, and moonscript.
+ .
+ busted test specs read naturally without being too
+ verbose. You can even chain asserts and negations,
+ such as assert.not.equals. Nest blocks of tests with
+ contextual descriptions using describe, and add tags
+ to blocks so you can run arbitrary groups of tests.
+ .
+ Full documentation at: http://olivinelabs.com/busted.
